@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -18,7 +19,8 @@ import { Home_teamModule } from './home_team/home_team.module';
     PartidosModule,
     EquiposModule,
     Away_teamModule,
-    Home_teamModule
+    Home_teamModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,12 +5,12 @@ export class Partido {
   attendance: string;
   away_team: Away_team;
   away_team_country: string;
-  date_time: any;
+  date_time: string;
   home_team: Home_team;
   home_team_country: string;
   id: number;
-  last_changed_at: any;
-  last_checked_at: any;
+  last_changed_at: string;
+  last_checked_at: string;
   location: string;
   stage_name: string;
   status: string;
@@ -22,12 +22,12 @@ export class Partido {
     attendance: string,
     away_team: Away_team,
     away_team_country: string,
-    date_time: any,
+    date_time: string,
     home_team: Home_team,
     home_team_country: string,
     id: number,
-    last_changed_at: any,
-    last_checked_at: any,
+    last_changed_at: string,
+    last_checked_at: string,
     location: string,
     stage_name: string,
     status: string,

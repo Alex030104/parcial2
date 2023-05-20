@@ -1,3 +1,63 @@
-<p>
-  equipos-list works!
-</p>
+<div *ngIf="selected">
+  <app-equipos-detail [equipoDetail] = "selectedEquipo"></app-equipos-detail>
+</div>
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">name</th>
+          <th class="h4">games_played</th>
+          <th class="h4">country</th>
+          <th class="h4">draws</th>
+          <th class="h4">goal_differential</th>
+          <th class="h4">goals_against</th>
+          <th class="h4">goals_for</th>
+          <th class="h4">group_letter</th>
+          <th class="h4">group_points</th>
+          <th class="h4">losses</th>
+          <th class="h4">wins</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let e of equipos">
+          <td>
+            <dd>{{e.name}}</dd>
+          </td>
+          <td>
+            <dd>{{e.games_played}}</dd>
+          </td>
+          <td>
+            <dd>{{e.country}}</dd>
+          </td>
+          <td>
+            <dd>{{e.draws}}</dd>
+          </td>
+          <td>
+            <dd>{{e.goal_differential}}</dd>
+          </td>
+          <td>
+            <dd>{{e.goals_against}}</dd>
+          </td>
+          <td>
+            <dd>{{e.goals_for}}</dd>
+          </td>
+          <td>
+            <dd>{{e.group_letter}}</dd>
+          </td>
+          <td>
+            <dd>{{e.group_points}}</dd>
+          </td>
+          <td>
+            <dd>{{e.losses}}</dd>
+          </td>
+          <td>
+            <dd>{{e.wins}}</dd>
+          </td>
+       </tr>
+      </tbody>
+      <tfoot>
+    </table>
+  </div>
+</div>

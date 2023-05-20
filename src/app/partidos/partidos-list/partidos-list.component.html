@@ -1,3 +1,76 @@
-<p>
-  partidos-list works!
-</p>
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4"> id </th>
+          <th class="h4">attendance</th>
+          <th class="h4">away_team</th>
+          <th class="h4">away_team_country</th>
+          <th class="h4">date_time</th>
+          <th class="h4">home_team/th>
+          <th class="h4">home_team_country</th>
+          <th class="h4">last_changed_at</th>
+          <th class="h4">last_checked_at</th>
+          <th class="h4">location</th>
+          <th class="h4">stage_name/th>
+          <th class="h4">status</th>
+          <th class="h4">venue</th>
+          <th class="h4">winner</th>
+          <th class="h4">winner_code</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let p of partidos">
+          <td>
+            <dd>{{p.id}}</dd>
+          </td>
+          <td>
+            <dd>{{p.attendance}}</dd>
+          </td>
+          <td>
+            <dd>{{p.away_team}}</dd>
+          </td>
+          <td>
+            <dd>{{p.away_team_country}}</dd>
+          </td>
+          <td>
+            <dd>{{p.date_time}}</dd>
+          </td>
+          <td>
+            <dd>{{p.home_team}}</dd>
+          </td>
+          <td>
+            <dd>{{p.home_team_country}}</dd>
+          </td>
+          <td>
+            <dd>{{p.last_changed_at}}</dd>
+          </td>
+          <td>
+            <dd>{{p.last_checked_at}}</dd>
+          </td>
+          <td>
+            <dd>{{p.location}}</dd>
+          </td>
+          <td>
+            <dd>{{p.stage_name}}</dd>
+          </td>
+          <td>
+            <dd>{{p.status}}</dd>
+          </td>
+          <td>
+            <dd>{{p.venue}}</dd>
+          </td>
+          <td>
+            <dd>{{p.winner}}</dd>
+          </td>
+          <td>
+            <dd>{{p.winner_code}}</dd>
+          </td>
+       </tr>
+      </tbody>
+      <tfoot>
+    </table>
+  </div>
+</div>
